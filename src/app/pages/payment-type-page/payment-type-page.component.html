@@ -1,0 +1,23 @@
+<div class="container" style="margin-top:1rem;min-width:95vw">
+    <div class="details mb-3">
+      <form action="" [formGroup]="form">
+
+      <div style="justify-content: center;" class="phone">
+        <label class="heading" style="font-size:2rem;" for="phone">Contact Phone (+47):
+          <input formControlName="phone" class="form-control" type="text" name="phone" id="phone">
+        </label>
+
+        <div *ngIf="form.invalid && (form.dirty || form.touched)" style="width:max-content;margin:auto" class="alert alert-danger">
+Must be 8 digits
+        </div>
+      </div>
+      <div class="email mb-2" style="font-size:0.8rem;">
+      By continuing, you consent to be contacted via Phone and E-Mail for processing and updates
+      </div>
+  </form>
+</div>
+
+
+
+<button [disabled]="!form.valid" (click)="checkRole()" class="btn btn-success btn-block">Pay Now</button>
+</div>

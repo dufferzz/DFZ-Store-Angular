@@ -1,0 +1,187 @@
+<ng-container *ngIf="loading == true">
+  <div style="display: block;width:100%;text-align:center;">
+    <h1 class="heading">Loading</h1>
+    <div class="loader"></div>
+  </div>
+</ng-container>
+
+<ng-container [@ngIfAnimation] *ngIf="productFound && loading != true">
+  <div class="productContent">
+  <div class="breadcrumbs">
+    <span style="color:darkorange;cursor:pointer" routerLink="/" routerLinkActive="router-link-active">
+      Home
+    </span>
+    /
+    <span style="color:darkorange;cursor:pointer" routerLink="/brand/{{product.supplier}}" routerLinkActive="router-link-active">
+      {{product.supplier}}
+    </span>
+    /
+    <span style="color:darkorange;cursor:pointer" routerLink="/category/{{product.category}}" routerLinkActive="router-link-active">
+      {{categoryName}}
+    </span>
+    /
+    <span style="color:darkorange;cursor:pointer" routerLink="/products/{{product.title}}" routerLinkActive="router-link-active">{{product.title}}</span>
+
+  </div>
+  <span style="text-align:center;width:100%;line-height:2.5rem;display:block;" class="heading">{{name}}</span>
+  <div style="width: 100%;text-align:center">
+  <ng-container *ngIf="product.supplier">
+    <span i18n style="color:white;line-height:2rem;text-align:center">
+    Supplier: {{product.supplier}}
+
+    </span>
+  </ng-container>
+    <ng-container *ngIf="product.sku">
+      <span i18n style="color:white;line-height:2rem;text-align:center">
+   | SKU: {{product.sku}}
+  </span>
+  </ng-container>
+</div>
+  <div class="productRow">
+    <div class="picHolder">
+
+    <div class="gallery"style='position:relative'>
+      <div style="position: absolute;">
+        <img *ngIf="product.onSale == true" src="/assets/images/cornerSale.webp" style="border-radius:8px 0 0 0;"
+          width="150px" alt="">
+      </div>
+      <div *ngIf="product.onSale == true"  class="percent">
+        {{percentDifference.replace("-", "")}}% Off!
+      </div>
+      <a href="/assets/images/products/{{image}}.webp">
+        <img class="productImage mb-2" src="/assets/images/products/{{image}}.webp">
+      </a>
+      <ng-container *ngIf="product.images">
+        <div class="thumbs">
+        <a *ngFor="let image of product.images" href="/assets/images/products/{{image}}.webp">
+          <img width="75px"
+            class="thumbImage" src="/assets/images/products/{{image}}.webp" alt="altText"
+            srcset=""></a>
+          </div>
+      </ng-container>
+    </div>
+
+
+
+    </div>
+
+    <div data-aos="fade-left" style="margin: 1rem;" class="description">
+
+
+      <!-- On sale Content -->
+      <ng-container *ngIf="onsale == true; then thenBlock else elseBlock"></ng-container>
+      <ng-template #thenBlock>
+        <h5 style="font-size:2rem;text-decoration: line-through;line-height:2rem;color:red" class="heading">
+          {{price | currency:'NOK':'symbol':'':'nn'}}
+        </h5>
+        <h5 style="line-height: 3rem;" class="heading">{{salePrice | currency:'NOK':'symbol':'':'nn'}}</h5>
+        <div i18n
+          style="text-align:center;color:white;font-weight:bold;background-color:green;border-radius:10px;width:fit-content;padding:10px;margin:auto;"
+          class="mb-3">
+          <span style="font-size: 1.5rem;">
+          On Sale now!
+          </span>
+          <br>
+           Save {{percentDifference.replace("-", "")}}% Today!
+        </div>
+      </ng-template>
+
+      <!-- Not on sale content -->
+      <ng-template #elseBlock>
+        <span style="line-height: 3rem;" class="heading">{{price | currency:'NOK':'symbol':'':'nn'}}</span>
+      </ng-template>
+
+
+
+      <h6 i18n style="color:white;margin:auto;width:fit-content;line-height:2rem;" class="mb-2">In Stock Now! - 10+
+        Available</h6>
+      <button (click)="addToCart(product)" i18n style="max-width: 50%;margin:auto;" class="searchButn btn-block">
+        Add To Cart
+      </button>
+      <h6 *ngIf="product.onSale == true" style="color: white;text-align:center;margin-top:10px">Sale ends 21/10/2019
+      </h6>
+
+    </div>
+  </div>
+
+<ng-container>
+  <div style="margin:0;padding:0;" i18n class="heading">Description</div>
+
+  <div class="descriptionBox" >
+    <h5 i18n style="color: white;white-space:pre-line;line-height:130%" [innerHTML]="description">
+
+    </h5>
+  </div>
+</ng-container>
+  <div *ngIf="specs.length > 0">
+    <div i18n class="heading">Specification
+      <h6>Tap for more information</h6>
+    </div>
+    <div class="features">
+      <div i18n *ngFor="let spec of product.specs" (click)="open(content)" title="More Info" class="feature">
+        <div class="specName">{{spec.title}}</div>
+        <div class="specSpec">{{spec.spec}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+
+    <div *ngIf="product.video.length > 0" style="text-align: center" class="gallery" data-aos="zoom-in">
+      <span i18n class="heading">Media</span>
+      <br>
+      <!-- <iframe class="videoMedia" [src]="video" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+
+
+    <div i18n *ngIf="product.reviews.length > 0" style="width: 100%;text-align:center" class="description mb-3">
+      <span class="heading">Reviews</span>
+
+      <div *ngFor="let review of reviews"
+        style="width: 100%;border-radius:5px;min-height:100px;background-color:rgba(255,255,255,0.7);padding:10px;">
+        <b>{{review.name}} - {{review.date}}</b>
+        <h5>{{review.comment}}</h5>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+  </div>
+
+
+<button style="height: 3rem" i18n [routerLink]="'/admin'" *ngIf="isAdmin == true" class="btn btn-block btn-danger mb-3">
+  Edit this item
+</button>
+
+</div>
+
+</ng-container>
+
+<ng-container *ngIf="!productFound && loading == false">
+  <div class="notFound">
+    <h1 i18n class="heading"> Product does not exist!</h1>
+    <button i18n [routerLink]="['/']" routerLinkActive="router-link-active" class="btn btn-success">
+      Go Home
+    </button>
+  </div>
+</ng-container>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 i18n class="modal-title" style="text-align: center;width:100%;" id="modal-basic-title">Xenoy Deck</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <h5 i18n>The deck itself is constructed from polymers instead of metal; Honda’s Xenoy®
+      polymer is corrosion resistant and lightweight, designed to be fully capable of
+      withstanding the rigors involved in heavy mowing workloads.</h5>
+  </div>
+  <div class="modal-footer">
+    <button i18n type="button" class="btn btn-outline-dark" (click)="modal.close()">Close</button>
+  </div>
+</ng-template>

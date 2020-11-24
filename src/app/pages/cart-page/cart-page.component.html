@@ -1,0 +1,55 @@
+<h1 class="heading">
+  Your Cart
+</h1>
+
+
+<table class="cartTable">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Qty</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngIf="items.length < 1">
+      <tr>
+        <td colspan="4"> No Items </td>
+        </tr>
+    </ng-container>
+<ng-container *ngFor="let item of items">
+  <tr>
+    <td style="padding: 0;padding-left:5px">
+      <button (click)="removeFromCart(item.id)" style="padding:0;width:35px;height:35px" class="btn btn-danger">
+        <fa-icon [icon]="faTrash"></fa-icon>
+        </button>
+    </td>
+    <td style="max-width: 25vw;">{{item.product.title}}</td>
+    <td style="margin:0;padding:0">
+      <button style="width:35px;height:35px;font-weight:bold;" class="btn btn-danger">-</button>
+      {{item.qty}}
+      <button style="width:35px;height:35px;font-weight:bold;" class="btn btn-success">+</button>
+    </td>
+    <ng-container *ngIf="item.product.onSale == true"><td>{{item.product.salePrice | currency:'NOK':'symbol':'':'nn'}}</td></ng-container>
+    <ng-container *ngIf="!item.product.onSale == true">
+    <td>{{item.product.price | currency:'NOK':'symbol':'':'nn'}}</td>
+  </ng-container>
+  </tr>
+</ng-container>
+
+</tbody>
+</table>
+<div class="w-100">
+<ng-container *ngIf="items.length > 0">
+  <h1 class="heading">
+    Sub-Total:
+    <br>
+    {{subtotal | currency:'NOK':'symbol':'':'nn'}}
+  </h1>
+  <button class='btn btn-block btn-success' style="height:3rem;" (click)="sendToServer()">Go to Checkout</button>
+  <button class='btn btn-block btn-danger' style="height:3rem;" (click)="clearCart()">Clear Cart</button>
+</ng-container>
+</div>
+
+<h6 class="heading" style="font-size: 1.2rem;">  All Prices Include MVA at 25%</h6>

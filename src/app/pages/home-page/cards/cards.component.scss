@@ -1,0 +1,39 @@
+
+.cardd {
+  border-radius: 7px;
+  border: 3px solid darkorange;
+  background-color: #fafafa;
+  color: black;
+  height: 80px;
+  width: 200px;
+  margin: 0 8px 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  line-height: 24px;
+  text-align: center;
+  /* animation: arrow 1s ease-in-out 1s 1; */
+}
+
+
+.cardd:hover {
+  cursor: pointer;
+  background-color: rgb(255, 136, 0);
+  background: linear-gradient(0deg, rgba(255, 136, 0, 1) 0%, rgba(250, 166, 52, 1) 100%);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 800px) {
+ .card-container {
+   display: none;
+ }
+}

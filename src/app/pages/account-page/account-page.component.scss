@@ -1,0 +1,66 @@
+.form-control{
+  text-align: center!important;
+}
+
+label{
+  margin: 0 !important;;
+}
+table{
+
+  width:100%;
+  color:white;
+  display: table;
+border: 2px solid rgba(255, 255, 255, 0.3);
+border-radius: 10px;
+// padding:10px;
+border-collapse: separate !important;
+border-spacing: 0!important;
+text-align: center;
+}
+td{
+  padding:10px;
+  margin:0;
+}
+tr{
+  width: 100%;
+  margin:0;
+}
+thead{
+  padding:0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.statusIcon{
+  width:40px;
+  height:40px;
+}
+
+@media screen and (max-width: 800px) {
+  .statusIcon{
+    width:30px;
+    height:30px;
+  }
+  .cartTable{
+    width: 100%;
+  }
+  // td .btn{
+  //   width:30px!important;
+  //   height:30px!important;
+  // }
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}

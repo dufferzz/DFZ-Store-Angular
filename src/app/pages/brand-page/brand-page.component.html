@@ -1,0 +1,158 @@
+<ng-container *ngIf="loading == true">
+  <div style="display: block;width:100%;text-align:center;">
+    <h1 i18n class="heading">Loading</h1>
+    <div i18n class="loader"></div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="products && loading != true">
+  <div class="breadcrumbs">
+    <span style="color:darkorange;cursor:pointer" routerLink="/" routerLinkActive="router-link-active">Home</span>
+    /
+    <span style="color:darkorange;cursor:pointer" routerLink="/brand/{{id}}"
+      routerLinkActive="router-link-active">{{id}}</span>
+  </div>
+
+
+  <div class="banner">
+    <img class="bannerImage" src="/assets/images/banners/2018-09-eu30istfs-1440x300.jpg" alt="" srcset="">
+  </div>
+
+
+  <span i18n style="width: 100%;text-align:center;display:block;" class="heading">
+    <span style="font-size:3.5rem">{{id}}</span>
+  </span>
+
+
+  <div class="filters">
+
+    <select (change)="change($event)" name="categoryFilter" id="categoryFilter" class="select-css">
+      <option value="">Filter By Category</option>
+      <option *ngFor="let category of categories" value="{{category.category}}">{{category.title}}</option>
+    </select>
+
+    <select name="categoryFilter" id="categoryFilter" class="select-css">
+      <option value="none">Filter By Make</option>
+    </select>
+
+    <select name="categoryFilter" id="categoryFilter" class="select-css">
+      <option value="none">Filter By Price</option>
+    </select>
+
+
+
+
+  </div>
+
+
+
+  <div style="display: flex-wrap;width:100%;flex-wrap:wrap;align-items:center;justify-content:center;text-align:center">
+    <div [@ngIfAnimation] class="products mb-3">
+
+      <span i18n style="width: 100%;text-align:center;display:block;" class="heading">
+        On Sale Now
+      </span>
+
+      <ng-container *ngFor="let product of products">
+        <ng-container *ngIf="product.onSale == true">
+          <a routerLink="/products/{{product.title}}">
+            <div style="position: relative;" class="product">
+
+              <div style="position: absolute;">
+                <img *ngIf="product.onSale == true" src="/assets/images/cornerSale.webp"
+                  style="border-radius:8px 0 0 0;" width="75px" alt="">
+              </div>
+              <div *ngIf="product.onSale == true" class="percent"
+                style="position: absolute;right:0;top:0;padding:10px;background-color:green;color:white;border-radius:0 8px 0 8px">
+                {{product.percentDifference.replace("-", "")}}% Off!
+              </div>
+
+
+              <img loading="lazy" style="border-radius:10px 10px 0 0;"
+                src="/assets/images/products/{{product.image}}.webp" class="prodThumb">
+              <div
+                style="width:100%;height:100%;background-color: white; font-weight:bold;padding:0;border-radius:0 0 10px 10px">
+                <span style="color:black">{{product.title}}</span>
+                <br>
+                <ng-container *ngIf="product.onSale == true">
+                  <span
+                    style="text-decoration:line-through;color:darkred;font-size:0.8rem">{{product.price | currency:'NOK':'symbol':'':'nn'}}</span>
+                </ng-container>
+                <div i18n *ngIf="product.onSale == true" style="color: black;font-size:1.2rem;">Now
+                  {{product.salePrice | currency:'NOK':'symbol':'':'nn'}}</div>
+                <ng-container *ngIf="!product.onSale == true">
+                  <div i18n style="color: black;font-size:1.2rem;">{{product.price | currency:'NOK':'symbol':'':'nn'}}
+                  </div>
+
+                </ng-container>
+
+              </div>
+              <div class="shadowww"></div>
+
+            </div>
+          </a>
+        </ng-container>
+      </ng-container>
+
+
+    </div>
+  </div>
+
+
+
+  <span i18n style="width: 100%;text-align:center;display:block;" class="heading">
+    All Products
+  </span>
+
+
+
+  <div style="display: flex-wrap;width:100%;flex-wrap:wrap;align-items:center;justify-content:center;text-align:center">
+    <div [@ngIfAnimation] class="products mb-3">
+
+      <ng-container *ngFor="let product of products">
+        <a routerLink="/products/{{product.title}}">
+          <div style="position: relative;" class="product">
+
+            <div style="position: absolute;">
+              <img *ngIf="product.onSale == true" src="/assets/images/cornerSale.webp" style="border-radius:8px 0 0 0;"
+                width="75px" alt="">
+            </div>
+            <img loading="lazy" style="border-radius:10px 10px 0 0;"
+              src="/assets/images/products/{{product.image}}.webp" class="prodThumb">
+            <div
+              style="width:100%;height:100%;background-color: white; font-weight:bold;padding:0;border-radius:0 0 10px 10px">
+              <span style="color:black">{{product.title}}</span>
+              <br>
+              <ng-container *ngIf="product.onSale == true">
+                <span
+                  style="text-decoration:line-through;color:darkred;font-size:0.8rem">{{product.price | currency:'NOK':'symbol':'':'nn'}}</span>
+              </ng-container>
+              <div i18n *ngIf="product.onSale == true" style="color: black;font-size:1.2rem;">Now
+                {{product.salePrice | currency:'NOK':'symbol':'':'nn'}}</div>
+              <ng-container *ngIf="!product.onSale == true">
+                <div i18n style="color: black;font-size:1.2rem;">{{product.price | currency:'NOK':'symbol':'':'nn'}}
+                </div>
+
+              </ng-container>
+
+            </div>
+            <div class="shadowww"></div>
+
+          </div>
+        </a>
+
+      </ng-container>
+
+
+    </div>
+  </div>
+
+</ng-container>
+
+<ng-container *ngIf="!products && loading != true">
+
+  <div class="heading">
+    <h1 i18n>No Items</h1>
+  </div>
+
+</ng-container>

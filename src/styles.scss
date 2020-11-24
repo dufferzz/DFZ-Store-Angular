@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~ngx-toastr/toastr';
+
+@import '~bootstrap/scss/bootstrap';
+@font-face {
+  font-family: 'Lalezar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/assets/fonts/lalezar-v6-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Lalezar'), local('Lalezar-Regular'),
+       url('/assets/fonts/lalezar-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/lalezar-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/lalezar-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/lalezar-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/lalezar-v6-latin-regular.svg#Lalezar') format('svg'); /* Legacy iOS */
+}
+
+
+html, body {
+  height: 100%;
+}
+
+
+.content{
+  min-height: 70vh!important;
+}
+
+.loader {
+  display: inline-block;
+  border: 16px solid #ff9f21; /* Light grey */
+  border-top: 16px solid #ff5100; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.pageFadeIn{
+  animation-name: pageFadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes pageFadeIn {
+  0% {
+opacity: 0%;  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+
+.heading {
+  padding-top:10px;
+  font-family: 'Lalezar';
+  /* lalezar-regular - latin */
+
+  font-size: 2.75rem;
+  color: white;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.4) 5px 5px 0;
+}
+
+.breadcrumbs{
+  width:100%;
+  color:white!important;
+  padding:10px;
+  text-align: center;
+  // font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.breadcrumbs a {
+  color:darkorange!important;
+  font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.background {
+  background-color: #333;
+  background-image: url('/assets/images/concrete.webp');
+  // background-size: contain;
+}
+
+.content {
+  display: flex;
+  /* margin: 25px auto 32px; */
+  padding: 0 16px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+  .content {
+    padding: 0;
+
+  }
+}
+.navBackground {
+  background-color: #333;
+  background-image: url('/assets/images/concrete.webp');
+  // background-size: contain;
+}

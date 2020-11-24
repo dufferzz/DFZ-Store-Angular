@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ngb.alert.close" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/alert/alert.d.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.previous" datatype="html">
+        <source>Previous</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.next" datatype="html">
+        <source>Next</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.previous-month" datatype="html">
+        <source>Previous month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.next-month" datatype="html">
+        <source>Next month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-month" datatype="html">
+        <source>Select month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-year" datatype="html">
+        <source>Select year</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first" datatype="html">
+        <source>««</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous" datatype="html">
+        <source>«</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next" datatype="html">
+        <source>»</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last" datatype="html">
+        <source>»»</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first-aria" datatype="html">
+        <source>First</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous-aria" datatype="html">
+        <source>Previous</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next-aria" datatype="html">
+        <source>Next</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last-aria" datatype="html">
+        <source>Last</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.progressbar.value" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{getValue() / max | percent}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/progressbar/progressbar.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
+        <source>Increment hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.HH" datatype="html">
+        <source>HH</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.hours" datatype="html">
+        <source>Hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
+        <source>Decrement hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
+        <source>Increment minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.MM" datatype="html">
+        <source>MM</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.minutes" datatype="html">
+        <source>Minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
+        <source>Decrement minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
+        <source>Increment seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.SS" datatype="html">
+        <source>SS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.seconds" datatype="html">
+        <source>Seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
+        <source>Decrement seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.PM" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ i18n.getAfternoonPeriod() }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.AM" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ i18n.getMorningPeriod() }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.toast.close-aria" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/toast/toast.d.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="92eee6be6de0b11c924e3ab27db30257159c0a7c" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eef9f3c6383c61f86a632ac32794dfd01c7c8375" datatype="html">
+        <source>
+        <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Catalogue<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a016c2947256eeaa98bb946760c1787f0edc1fc9" datatype="html">
+        <source>
+        <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>About Us<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="96cc90dc5e2c9f9a98fe32ed3b2b420a434e7983" datatype="html">
+        <source>
+        <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Map<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ce9b71d2e59371cb6d4193b47530f3c020d9a01a" datatype="html">
+        <source>
+        <x id="START_TAG_FA-ICON" ctype="x-fa-icon" equiv-text="&lt;fa-icon&gt;"/><x id="CLOSE_TAG_FA-ICON" ctype="x-fa-icon" equiv-text="&lt;/fa-icon&gt;"/>
+          Cart
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e2372635c1e7be6a63fb3cc75de4e1309ba9316e" datatype="html">
+        <source>
+        <x id="START_TAG_FA-ICON" ctype="x-fa-icon" equiv-text="&lt;fa-icon&gt;"/><x id="CLOSE_TAG_FA-ICON" ctype="x-fa-icon" equiv-text="&lt;/fa-icon&gt;"/>
+        Account
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1e847bebeb6ea8637a42fb44d0224d881edd1178" datatype="html">
+        <source>
+        <x id="START_TAG_FA-ICON" ctype="x-fa-icon" equiv-text="&lt;fa-icon&gt;"/><x id="CLOSE_TAG_FA-ICON" ctype="x-fa-icon" equiv-text="&lt;/fa-icon&gt;"/>
+          Login
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6e2d38f7be9278a8840ded12ec3b8334598663f8" datatype="html">
+        <source>
+        <x id="START_TAG_FA-ICON" ctype="x-fa-icon" equiv-text="&lt;fa-icon&gt;"/><x id="CLOSE_TAG_FA-ICON" ctype="x-fa-icon" equiv-text="&lt;/fa-icon&gt;"/>
+        Logout
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7208fae02eb5168ff6395bd0fce5b8f20a0b52c9" datatype="html">
+        <source>Site Map</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1379fe158f9e3006a9013777df77e42999395c28" datatype="html">
+        <source>RSS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="97ff10ee67d15a4426938a718659e53155b82758" datatype="html">
+        <source>Our Affiliates</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="02e9e69ddcbf93de9fd38bc4d0f312142658610d" datatype="html">
+        <source>Contact Us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="42bdfd6d98c430549c61402a0513e3bba14f6e95" datatype="html">
+        <source>View Us On Facebook</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4821a4891623ad8d729f8604c718714bf1970381" datatype="html">
+        <source>Opening Times</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ed31c09fd77c36238c13d83635f3fe5294c733d2" datatype="html">
+        <source>Location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b8d10cd55fae4e4ad4f87d28e18251694f159bf7" datatype="html">
+        <source>Privacy Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fe7aecff7fef8d74db5bcca31f2247f88d21ee37" datatype="html">
+        <source>
+      © 2020 DFZ Service &amp; Repair is a registered trademark of Duff Repair.
+      <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+      <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Org No: 987338830MVA<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d56be978433ebf80f6613423a55eb954f4448686" datatype="html">
+        <source>
+    Show All Categories
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="df504002dbea411c572180a257e43365887968bb" datatype="html">
+        <source>
+    &lt;% categories.forEach(function(category) %&gt;
+    <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
+      &lt;%=category.title%&gt;
+    <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30da78ca9d922767486614eed163f010747da222" datatype="html">
+        <source>
+                          Service Workshop
+                      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/carousel/carousel.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e02f34661a38981a3d5e3ecc9dd154488c57a48f" datatype="html">
+        <source>
+                          Competitive Pricing with fast turnaround!
+                          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+                          3-5 Days Average!
+
+                      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/carousel/carousel.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="260f28987de6b874c8a8248c4296241005915199" datatype="html">
+        <source>
+                          Electric Generators
+                      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/carousel/carousel.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eb5c4adcf3b26752f443392c31acf5657e061c3d" datatype="html">
+        <source>
+                          Home and Industrial Options available!
+                          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+                          1-15kV!
+
+                      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/carousel/carousel.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9ddbe6f272c69d4db5234e7c9cccfb71098b131e" datatype="html">
+        <source>
+          Read Our Catalogs
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/cards/cards.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8dee5c6ebbc4a535fe3656ceb22228b5dbf3f7fd" datatype="html">
+        <source>
+          100% Satisfied Guarantee
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/cards/cards.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="638a55cec309779da3a63818fa45d0160b7600bc" datatype="html">
+        <source>
+          Fast Delivery!
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/cards/cards.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7eb73994d6732a7415e43a8de3f0071cab4b22a8" datatype="html">
+        <source>
+          Service Workshop
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/cards/cards.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fe571db924055ba827566fc6d138553c075901d9" datatype="html">
+        <source>
+          Flexible Financing Solutions
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/cards/cards.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="def755457793d5ad40597886d2d317bc5f415a2f" datatype="html">
+        <source>Loading</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/categories/categories.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/category-page/category-page.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="04201f9d27abd7d6f58a4328ab98063ce1072006" datatype="html">
+        <source>Categories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/categories/categories.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4843a9fa52ba9fcce9ec4449e1119199d59fbea7" datatype="html">
+        <source>
+        <x id="INTERPOLATION" equiv-text="{{category.title}}"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/categories/categories.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="20254df2ab1fc4adb3005124b72c425b8f2b185d" datatype="html">
+        <source>
+        <x id="INTERPOLATION" equiv-text="{{category.description}}"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/categories/categories.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c21869e26f972ef50a6e59be72b09b402d6a1e59" datatype="html">
+        <source>about-page works!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-page/about-page.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0e09f44d6604fa9c081186caa24e0a753295a01f" datatype="html">
+        <source>All Products
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/category-page/category-page.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2615512e4be6eb4d27ba4371dd82f8834e4090ad" datatype="html">
+        <source>Now <x id="INTERPOLATION" equiv-text="{{product.salePrice}}"/> kr!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/category-page/category-page.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0226f52814ecd59ee1a25532c330943c471b425a" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{product.price}}"/> kr</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/category-page/category-page.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="99894e02330a6419bed5b32d0147d8bb38eab7f1" datatype="html">
+        <source>No Items</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/category-page/category-page.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1aef439af38c0a90805c76d48e16b037a2e2a3d6" datatype="html">
+        <source>Supplier: Husqvarna | EAN: 234334252</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="827ec2b170d6888621384bd006f713ccdd6eb48e" datatype="html">
+        <source>
+            On Sale now!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5775ac12cb652364f6b0e7a1a511d7be671fecbf" datatype="html">
+        <source>In Stock Now! - 10+ Available</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1dd0c3c478bbfc3fc5aa9cae38f592eed90ae17b" datatype="html">
+        <source>
+          Add To Cart
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="54d6c2d0a072d5c3134d19bef390c0f1fd04a0e4" datatype="html">
+        <source>Description </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8899fdddc1482d10fbc2c369c1c6748afe6edc8d" datatype="html">
+        <source>
+          <x id="INTERPOLATION" equiv-text="{{description}}"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="11313e2a91a5d3fd4e8d9e118d04f9a176ceccd4" datatype="html">
+        <source>Features
+        <x id="START_HEADING_LEVEL6" ctype="x-h6" equiv-text="&lt;h6&gt;"/>Tap for more information<x id="CLOSE_HEADING_LEVEL6" ctype="x-h6" equiv-text="&lt;/h6&gt;"/>
+
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a344b09b1b8c68e999573fe5993ed4c9d8a9918e" datatype="html">
+        <source>Xenoy Deck</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e7debfd875b20042be1d04f2a6f32ddb4a33c723" datatype="html">
+        <source>Easy-Fold Handles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="877872394700c56b24b7d024e36ea893339feb9e" datatype="html">
+        <source>55 Liter Collection Bag</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80741fef067d345b07a09b2721e757cbbf7af26e" datatype="html">
+        <source>Bio-Clip Cutting System</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6c524dba7d02864c7a2bbb33232e48324193024a" datatype="html">
+        <source>Hydrostatic Drive</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="be13150c75691df0eb90784ed4c6d0b2e73f210b" datatype="html">
+        <source>Ball-Bearing Wheels</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e504c6859e2234243cf76a10572c89caab644b01" datatype="html">
+        <source>Specification</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7d3c318c04f8fec2c37888787fe571033da42874" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{spec.title}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c6faa9e8dc4457dd1716c781299d8d2b696479e2" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{spec.spec}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8a27a855a00b08d2ca981207638ea9097032412b" datatype="html">
+        <source>Media</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="88e6ea444f4f9e29e8ccd1d55a3aeda379b5a1fb" datatype="html">
+        <source>
+        <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Reviews<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+
+        <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+          <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{review.name}}"/> - <x id="INTERPOLATION_1" equiv-text="{{review.date}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>
+          <x id="START_HEADING_LEVEL5" ctype="x-h5" equiv-text="&lt;h5&gt;"/><x id="INTERPOLATION_2" equiv-text="{{review.comment}}"/><x id="CLOSE_HEADING_LEVEL5" ctype="x-h5" equiv-text="&lt;/h5&gt;"/>
+          <x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          <x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          <x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          <x id="START_TAG_SPAN_2" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          <x id="START_TAG_SPAN_2" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+        <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="34224daa5bfb3ae408caefb39111115cbc9bcfa4" datatype="html">
+        <source> Product does not exist!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="198c48cd09b7766410bfeca2dad7f3fa08bf8e48" datatype="html">
+        <source>
+        Go Home
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ac05d1e2b5de8d0320c024b7ab7f00219db38ef6" datatype="html">
+        <source>Profile update</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4a80d022e000dfca47748e22617d3f30c3bda88e" datatype="html">
+        <source>REEEEEEEEEEEEEEEEEEEEEEEEE!!!!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/product-page/product-page.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e94bb788d4b7185a06d8567e3a4053863c0fca30" datatype="html">
+        <source>Please Log In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/login-page/login-page.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="08c74dc9762957593b91f6eb5d65efdfc975bf48" datatype="html">
+        <source>Username</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/login-page/login-page.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0070e83d11da39d6f4bb95065c2675db1610b419" datatype="html">
+        <source>Username is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/login-page/login-page.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/login-page/login-page.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1e20f8b8a4706526c9024cc2f39d568345d100dc" datatype="html">
+        <source>Password is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/login-page/login-page.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7c61a7687e8a1b72a907b1144b4af3dd6e234d17" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{error}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/login-page/login-page.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f0c351d1d9edd959f749846586a1fcd0c39c2fdd" datatype="html">
+        <source>You have been logged out!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/logout-page/logout-page.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="73170c67587f5eadfe3ae9e4cbc12596b0fdc9f3" datatype="html">
+        <source>You should be redirected shortly..</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/logout-page/logout-page.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76aae06bb79ee044aa1c11bdd1955338e44db46a" datatype="html">
+        <source>Go Home!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/logout-page/logout-page.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

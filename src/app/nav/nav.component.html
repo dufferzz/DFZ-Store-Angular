@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+  <a class="navbar-brand" [routerLink]="'/'">
+    <img src="/assets/images/logoo.webp" width="200px" alt="DFZ Service logo" title="Go Home" srcset="" (click)="isMenuCollapsed = true">
+  </a>
+  <button id="cartBtn" style="height:3rem;margin-left:auto;
+  " [routerLink]="'/cart'" (click)="isMenuCollapsed = true" i18n class="searchButn">
+    <fa-icon [icon]="faShoppingCart"></fa-icon>
+      <b>: {{cartItems}}</b>
+  </button>  <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
+  <button  class="navbar-toggler" type="button"
+   (click)="isMenuCollapsed = !isMenuCollapsed;changeState()"
+   >
+    &#9776;
+  </button>
+
+  <!-- Step 2: Add the ngbCollapse directive to the element below. -->
+  <div [@navAnimation]=isMenuCollapsed [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <!-- Step 4: Close the menu when a link is clicked. -->
+        <a i18n class="nav-link" [routerLink]="'first'" (click)="isMenuCollapsed = true">Home</a>
+      </li>
+      <li i18n class="nav-item">
+        <a class="nav-link" href="/assets/images/catalogue.webp" (click)="isMenuCollapsed = true">Catalogue</a>
+      </li>
+      <li i18n class="nav-item">
+        <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">About Us</a>
+      </li>
+      <li i18n class="nav-item">
+        <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Map</a>
+      </li>
+    </ul>
+    <div class="menubuttons">
+      <button i18n [routerLink]="'/admin'" (click)="isMenuCollapsed = true" *ngIf="authService.isAdmin == true" class="adminButn">
+        <fa-icon [icon]="faUser"></fa-icon>
+        Admin Panel
+    </button>
+    <button style="display: none;" id="navCartBtn" [routerLink]="'/cart'" (click)="isMenuCollapsed = true" i18n class="searchButn">
+      <fa-icon [icon]="faShoppingCart"></fa-icon>
+        <b>: {{cartItems}}</b>
+    </button>
+      <button i18n [routerLink]="'/account'" (click)="isMenuCollapsed = true" *ngIf="authService.loggedIn" class="searchButn">
+        <fa-icon [icon]="faUser"></fa-icon>
+        Account
+    </button>
+      <button i18n *ngIf="!authService.loggedIn" (click)="authService.login()" class="searchButn">
+        <fa-icon [icon]="faUser"></fa-icon>
+          Login
+      </button>
+      <button i18n *ngIf="authService.loggedIn" (click)="authService.logout()" class="searchButn">
+        <fa-icon [icon]="faSignOut"></fa-icon>
+        Logout
+    </button>
+
+
+  </div>
+  </div>
+</nav>

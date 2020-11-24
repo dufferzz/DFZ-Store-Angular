@@ -1,0 +1,28 @@
+<ng-container *ngIf="loading == true">
+  <div style="display: block;width:100%;text-align:center;">
+    <h1 i18n class="heading">Loading</h1>
+  <div class="loader"></div>
+</div>
+</ng-container>
+
+<ng-container [@ngIfAnimation]  *ngIf="!loading == true">
+
+  <h1 i18n class="heading ">Categories</h1>
+  <div class="categories mb-5">
+    <div *ngFor="let category of categories; let i = index" routerLink="/category/{{category.category}}" routerLinkActive="router-link-active"
+      class="category">
+        <img style="width: 100%;height:100%"
+        src="/assets/images/{{category.image}}.webp" alt="{{category.title}}">
+      <div i18n class="categoryTitle">
+        {{category.title}}
+      </div>
+      <div i18n class="categoryDescription">
+        {{category.description}}
+      </div>
+      <div class="shadowww"></div>
+
+    </div>
+
+  </div>
+
+</ng-container>

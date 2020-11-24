@@ -1,0 +1,68 @@
+table{
+
+  width:100%;
+  color:white;
+  display: table;
+border: 2px solid rgba(255, 255, 255, 0.3);
+border-radius: 10px;
+// padding:10px;
+border-collapse: separate !important;
+border-spacing: 0!important;
+text-align: center;
+}
+td{
+  padding:10px;
+  margin:0;
+}
+tr{
+  width: 100%;
+  margin:0;
+}
+thead{
+  padding:0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 800px) {
+  .cartTable{
+    width: 100%;
+  }
+  // td .btn{
+  //   width:30px!important;
+  //   height:30px!important;
+  // }
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.flash {
+  animation: flash 0.7s linear infinite;
+}
+.flashy{
+  background-color: red;
+}
+@keyframes flash {
+  0%{
+    opacity: 50%;
+
+  }
+  50% {
+    opacity: 100%;
+  }
+  100%{
+    opacity: 50%;
+  }
+}

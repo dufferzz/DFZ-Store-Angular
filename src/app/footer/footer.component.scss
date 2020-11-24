@@ -1,0 +1,81 @@
+footer{
+  margin:0;
+  padding:20px;
+  border-top: 2px solid darkorange;
+}
+
+footer a {
+  color:white;
+  line-height: 1rem;
+}
+
+/* Style all font awesome icons */
+#footer .fa {
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size: 2rem;
+  // width: 55px;
+  // height: 55px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 0;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2), -5px -5px 15px 5px rgba(0,0,0,0.2);
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.6;
+  text-decoration: none;
+  color: white;
+  animation-name: border;
+  animation-duration: 0.1s;
+}
+
+/* instagram */
+.fa-instagram {
+  padding-left:15px;
+  padding-right:15px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+/* Facebook */
+.fa-phone {
+  padding-left:10px;
+padding-right:10px;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  color: white;
+}
+
+/* Facebook */
+.fa-youtube {
+
+  padding-left:10px;
+padding-right:10px;
+  background-color: #3f0d12;
+  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+  color: white;
+}
+
+/* Facebook */
+.fa-facebook {
+
+  padding-left:20px;
+padding-right:20px;
+  color: white;
+  background-color: #4d5dfb;
+  background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%);
+}
+
+/* Twitter */
+.fa-twitter {
+
+  padding-left:15px;
+padding-right:15px;
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  color: white;
+}

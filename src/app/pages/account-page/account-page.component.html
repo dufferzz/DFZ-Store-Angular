@@ -1,0 +1,60 @@
+<div style="margin-top:5px;text-align:center;">
+  <button style="margin:5px" routerLink="/account/machines" routerLinkActive="router-link-active"  class="btn btn-success">My Orders</button>
+  <button style="margin:5px" routerLink="/account/machines" routerLinkActive="router-link-active"  class="btn btn-success">My Machines</button>
+  <button style="margin:5px" routerLink="/account/machines" routerLinkActive="router-link-active"  class="btn btn-success">Account Details</button>
+
+</div>
+
+<ng-container [@ngIfAnimation]  *ngIf="loading == true">
+  <div style="display: block;width:100%;text-align:center;">
+    <h1 class="heading">Fetching your orders</h1>
+    <div class="loader"></div>
+  </div>
+</ng-container>
+
+
+<ng-container [@ngIfAnimation] *ngIf="loading != true">
+
+  <div class="container" style="min-width:95vw">
+    <h1 class="heading" style="font-size:2.5rem;">Your Orders</h1>
+
+    <table >
+      <thead>
+<tr>
+  <th>Status</th>
+  <th>Order ID</th>
+  <th># Items</th>
+  <th>Value</th>
+</tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="items.length < 1"><td colspan="4">No Orders Found</td></tr>
+        <tr *ngFor="let item of items">
+          <td>
+            <img *ngIf="item.orderStatus === 'received'" src="/assets/icons/success.svg" class="statusIcon" alt="" srcset="">
+            <img *ngIf="item.orderStatus === 'processing'" src="/assets/icons/clock.svg" class="statusIcon" alt="" srcset="">
+            <img *ngIf="item.orderStatus === 'awaitDelivery'" src="/assets/icons/success.svg" class="statusIcon" alt="" srcset="">
+
+          </td>
+
+          <td>{{item?.order_ID}}</td>
+          <td>{{item.items.length}}</td>
+          <td>{{item?.orderTotalPrice / 100 | currency:'NOK':'symbol':'':'nn'}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</ng-container>
+
+
+
+
+<button *ngIf="auth.isAdmin == true" class="button button-primary" (click)="subscribeToNotifications()">
+  Subscribe
+</button>
+<button *ngIf="auth.isAdmin == true" class="button button-primary" (click)="send()">
+  Send
+</button>

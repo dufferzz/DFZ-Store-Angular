@@ -1,0 +1,12 @@
+<div  *ngIf="screenWidth <= 1000" class="smallMenu col-sm-12 hidden-lg" style="width: 100%;" ngbDropdown class="d-inline-block">
+  <button  (click)="isMenuCollapsed = !isMenuCollapsed;" class="btn btn-block smallMenu" id="dropdownBasic1" ngbDropdownToggle>Show All Categories</button>
+  <div [@navAnimation]=isMenuCollapsed ngbDropdownMenu aria-labelledby="dropdownBasic1">
+    <button (click)="goTo(category.category)" routerLinkActive="router-link-active"  *ngFor="let category of categories" ngbDropdownItem>{{category.title}}</button>
+  </div>
+</div>
+
+<div *ngIf="screenWidth >= 1000" class="menu">
+  <span class="pointer" style="padding:7px;line-height: 2.5rem;" (click)="goTo(category.category)" *ngFor="let category of categories">
+    {{category.title}}
+  </span>
+</div>

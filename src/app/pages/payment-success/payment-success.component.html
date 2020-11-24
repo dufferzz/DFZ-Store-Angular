@@ -1,0 +1,76 @@
+<ng-container *ngIf="loading == true">
+  <div style="display: block;width:100%;text-align:center;">
+    <h1 i18n class="heading">Fetching your order...</h1>
+    <div i18n class="loader"></div>
+  </div>
+</ng-container>
+
+
+<ng-container *ngIf="loading != true">
+  <div class="container" style="min-width: 90vw;">
+    <div style="text-align:center;">
+      <fa-icon style="color:chartreuse;font-size:3rem;" class="" [icon]="faCheckCircle"></fa-icon>
+
+      <h2 class="heading" style="font-size:2.5rem;">We have recieved your order</h2>
+
+      <h5 class="heading" style="font-size:2rem;">Order #: {{order}}</h5>
+      <h6 class="heading" style="font-size:1rem;">A copy of this reciept has been emailed to: {{email}}
+      </h6>
+      <!-- <h5 class="heading" style="font-size:2rem;">Due: {{order?.amount_total / 100 | currency:'NOK':'symbol':'':'nn'}}   |   Paid: {{payInfo?.amount_received / 100 | currency:'NOK':'symbol':'':'nn'}}</h5> -->
+
+    </div>
+    <h1 class="heading" style="font-size:2.5rem;">Delivery Details</h1>
+
+    <div class="details">
+      <div style="width: 50%; float: left;">
+        <h5><b>Name:</b></h5>
+        <h6>{{name}}</h6>
+        <h5><b>Email:</b></h5>
+        <h6>{{email}}</h6>
+        <h5><b>Phone No:</b></h5>
+        <h6>{{phone}}</h6>
+      </div>
+      <div style="margin-left: 50%;">
+        <h5><b>Standard Delivery</b></h5>
+        <h6>(5-7 Days ETA)</h6>
+        <h5><b>Delivery Address:</b></h5>
+
+        <h6>{{deliveryinfo?.line1}}</h6>
+        <h6>{{deliveryinfo?.line2}}</h6>
+        <h6>{{deliveryinfo?.postal_code}} {{deliveryinfo?.city}}</h6>
+      </div>
+    </div>
+
+    <h1 class="heading" style="font-size:2.5rem;">Items Ordered:</h1>
+
+    <table class="cartTable mb-3">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Qty</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="items?.length < 1">
+          <tr>
+            <td colspan="4"> No Items </td>
+          </tr>
+        </ng-container>
+        <ng-container *ngFor="let item of items">
+          <tr>
+            <td style="max-width: 25vw;">{{item.description}}</td>
+            <td style="margin:0;padding:0">
+              {{item.quantity}}
+            </td>
+            <td>
+              {{item.price.unit_amount/100 | currency:'NOK':'symbol':'':'nn'}}
+            </td>
+          </tr>
+        </ng-container>
+
+      </tbody>
+    </table>
+    </div>
+
+</ng-container>

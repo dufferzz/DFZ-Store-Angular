@@ -1,0 +1,12 @@
+<div style="text-align: center;">
+<h1 class="heading">There has been an error!</h1>
+<h5 class="heading" >{{error}}</h5>
+<div *ngIf="error === ''" style="font-size: 1.5rem;" class="heading">
+  I don't know what you did (yet)... Don't do it again!<br>
+  The matrix is a sensitive place
+</div>
+
+<button class="btn btn-danger" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+  Go Home!
+</button>
+</div>

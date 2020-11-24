@@ -1,0 +1,147 @@
+<form [formGroup]="x">
+
+<div class="productContent" style="max-width: 95vw;">
+  <span style="text-align:center;width:100%;display:block;" class="heading">Product Name</span>
+  <input type="text" name="productName" class="form-control" style="margin:auto" id="productName" placeholder="">
+
+
+  <div class="form-row mb-3" style="width:100%;justify-content:center;">
+    <span class="col-md-4 col-lg-4 col-sm-6 heading" i18n style="color:white;text-align:center">
+      Category:
+      <label for="category">
+        <select class="form-control" [(ngModel)]='nrSelect' name="category" id="category" formControlName="category">
+          <option value="none" selected="true" disabled>Select Category</option>
+          <option *ngFor="let category of categories" value="{{category.category}}">{{category.title}}</option>
+        </select>
+      </label>
+
+
+    </span>
+
+    <span class="col-md-4 col-lg-4 col-sm-6 heading" i18n style="color:white;text-align:center">
+      Supplier:
+      <label for="supplier">
+
+        <input type="text" name="supplier" class="form-control" id="supplier">
+      </label>
+
+
+    </span>
+    <span i18n class="col-md-4 col-lg-4 col-sm-6 heading" style="color:white;text-align:center">
+      SKU:
+      <label for="sku">
+
+        <input type="text" name="sku" class="form-control" id="sku">
+      </label>
+    </span>
+  </div>
+  <div class="productRow">
+    <div class="picHolder">
+
+      <div class="gallery" style='position:relative'>
+        <div style="position: absolute;">
+          <img src="/assets/images/cornerSale.webp" style="border-radius:8px 0 0 0;" width="150px" alt="">
+        </div>
+        <div class="percent">
+          percentDifference
+        </div>
+        <a href="/assets/images/products/placeholder.webp">
+          <img class="productImage mb-2" src="/assets/images/products/placeholder.webp">
+        </a>
+        <ng-container>
+          <div class="thumbs">
+            <a href="/assets/images/products/placeholder.webp">
+              <img width="75px" class="thumbImage" src="/assets/images/products/placeholder.webp" alt="altText"
+                srcset=""></a>
+          </div>
+        </ng-container>
+      </div>
+
+
+
+    </div>
+
+    <div data-aos="fade-left" style="margin: 1rem;align-items:center;justify-content:center;" class="description">
+
+
+      <h5 style="line-height: 3rem;" class="heading">Actual Price</h5>
+      <div style="justify-content:center;align-items:center;text-align:center;width:100%;display:block">
+        <input style="max-width: 50%;margin-left:auto;margin-right:auto;" class="form-control" type="text"
+          name="price" id="price" placeholder="Ex: 345345">
+      </div>
+
+
+
+      <h5 style="line-height: 3rem;" class="heading">Sale Price</h5>
+      <div class="mb-3" style="justify-content:center;align-items:center;text-align:center;width:100%;display:block">
+        <input style="max-width: 50%;margin-left:auto;margin-right:auto;" class="form-control" type="text"
+          name="salePrice" id="salePrice" placeholder="Ex: 345345">
+      </div>
+
+      <div>
+        <label class="container">On Sale?
+          <input id="onSale" type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Show on store?
+          <input id="showOnStore" type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+
+
+      </div>
+
+      <div i18n style="color:white;margin:auto;width:fit-content;line-height:2rem;" class="mb-2">
+        <h4 class="heading">Current Stock:</h4>
+        <input class="form-control" type="number" name="stock" id="stock">
+      </div>
+    </div>
+  </div>
+
+
+  <div style="margin:0;padding:0;" i18n class="heading">Description</div>
+  <div style="background-color:white;width: 100%;max-width:80vw">
+    <quill-editor style="width: 100%;" id="itemDesc" formControlName="description" placeholder="Enter Description.."
+      [modules]="quillConfig">
+    </quill-editor>
+  </div>
+
+
+  <div style="text-align: center;">
+    <div i18n class="heading">Specification
+      <h6>Tap for more information</h6>
+    </div>
+    <div class="features">
+
+      <div *ngFor="let spec of specs" i18n (click)="open(content)" title="More Info" class="feature">
+        <div class="specName">{{spec.title}}</div>
+        <div class="specSpec">{{spec.spec}}</div>
+      </div>
+    </div>
+    <div class="form-row">
+      <input placeholder="Spec Title" class="form-control col-5" type="text" name="specTitle"
+        formControlName="specName" id="specTitle">
+      <input placeholder="Spec Value" class="form-control col-5" type="text" name="specSpec"
+        formControlName="specSpec" id="specSpec">
+</div>
+    <button  (click)="addSpec()" class="btn btn-success">Add new spec</button>
+  </div>
+
+  <div>
+
+    <div style="text-align: center" class="gallery" data-aos="zoom-in">
+      <span i18n class="heading">Media</span>
+      <br>
+      <!-- <iframe class="videoMedia" [src]="video" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      <button class="btn btn-success">Add new YouTube URL</button>
+
+    </div>
+
+
+
+  </div>
+</div>
+<button style="height:3rem" class="btn btn-block btn-success mb-3">Add new product!</button>
+</form>

@@ -1,0 +1,68 @@
+.carousel-item {
+  max-width: 60vw;
+
+}
+
+.slides {
+  max-width: 60vw
+}
+
+.topCarousel{
+  max-width: 60vw
+}
+
+@media screen and (max-width: 900px) {
+
+  .topCarousel, .carousel-inner, .carousel-item, .slides {
+    max-width: 100vw !important;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .carousel-caption{
+    top: 2%!important;
+  }
+
+  .carousel-caption p{
+    font-size: 1rem!important;
+  }
+
+  .carousel-caption h5{
+    font-size: 1.3em!important;
+  }
+}
+
+@media screen and (min-width: 801px) {
+
+
+  .topCarousel{
+    margin-left:auto;
+    margin-right:auto;
+    // width: 70vw !important;
+  }
+
+  .carousel-caption{
+    top: 10%!important;
+  }
+}
+
+
+.carousel-caption{
+  height: fit-content!important ;
+  padding:5px;
+  font-size: 1.5rem;
+}
+
+.carousel-caption h5{
+  font-size: 2.5rem;
+  /* font-weight: bold; */
+  color: rgba(255, 136, 0, 1);
+  // font-family: 'Alfa Slab One';
+  font-family: 'Lalezar';
+
+  text-shadow: rgba(0, 0, 0, 0.3) 5px 5px 0;
+
+}
+
